@@ -18,7 +18,7 @@ public:
     // Метод для попытки прохода контроля
     bool tryControl(int currentTime);
 
-    int getNumber() const;  // 
+    int getNumber() const; 
     int getSaleTime() const;
     int getMaxTrips() const;
     int getRemainingTrips() const;
