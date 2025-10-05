@@ -12,13 +12,15 @@ private:
     int lastControlTime; // время последнего прохода через контроль
 
 public:
-    // Создание билета с заданным числом поездок
-    void creat(int num, int saleT, int maxT); 
+public:
+    // Создание билета с заданным числом поездок (с использованием конструктора)
+    Ticket_1(int num, int saleT, int maxT);
 
     // Метод для попытки прохода контроля
     bool tryControl(int currentTime);
 
-    int getNumber() const; 
+    
+    int getNumber() const;
     int getSaleTime() const;
     int getMaxTrips() const;
     int getRemainingTrips() const;

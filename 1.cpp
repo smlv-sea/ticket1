@@ -1,13 +1,14 @@
 #include "1.h"
 
 // Создание билета
-void Ticket_1::creat(int num, int saleT, int maxT) {  // 
-    number = num;      // 
+Ticket_1::Ticket_1(int num, int saleT, int maxT){
+    number = num;
     saleTime = saleT;
     maxTrips = maxT;
     remainingTrips = maxT;
     lastControlTime = -1;
 }
+
 
 // Возможность прохода контроля 
 bool Ticket_1::tryControl(int currentTime) {
